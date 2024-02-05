@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cursor</title>
+        <link rel="stylesheet" href="animate.css">
+    </head>
+    <body>
+        <section class="main">
+            <h1>Cursor</h1>
+        </section>
+        <div class="cursor"></div>
+        <script type="text/javascript">
+            const cursor = document.querySelector('.cursor');
+            var timeout;
+
+            //following the cursor movement
+            document.addEventListener("mousemove",(e) => {
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursor.style.top = y + "px";
+                cursor.style.left = x + "px";
+                cursor.style.display = "block";
+
+                function mouseStopped(){
+                cursor.style.display = "none";
+            }
+            clearTimeout(timeout)
+            timeout = setTimeout(mouseStopped,2500);
+            })
+
+           
+
+            //effects on mouse outside
+            document.addEventListener("mouseout", () => {
+                cursor.style.display = "none";
+            })
+        </script>
+    </body>
+</html>

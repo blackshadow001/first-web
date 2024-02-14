@@ -88,3 +88,4 @@ loadMoreBtn.addEventListener("click",loadMoreImages)
 searchInput.addEventListener("keyup",loadSearchImages)
 closeBtn.addEventListener("click",hideLightbox)
 downloadImgBtn.addEventListener("click",(e) => downloadImg(e.target.dataset.img));
+

@@ -2,47 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CloudOn</title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Icon Scout Link for Icon-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <script src="script.js"defer></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width = device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="index.css">
     </head>
-
     <body>
-        <div class="lightbox">
-            <div class="wrapper">
-                <header>
-                    <div class="photographer">
-                        <i class="uil uil-camera"></i>
-                        <span></span>
-                    </div>
-                    <div class="buttons">
-                        <i class="uil uil-import"></i>
-                        <i class="uil uil-times"></i>
-                    </div>
-                </header>
-                <div class="preveiw-img">
-                    <div class="img"><img src="" alt="preveiw-img"></div>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">Image Downloader</a></div>
+                <ul class="links">
+                    <li><a href="hero">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="login_page.html">SignIn</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <a href="image.html" class="action_btn">Get started</a>
+                <div class="toogle_btn">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-        </div>
-        <section class="search"><!--have to change-->
-            <img src="https://i.pinimg.com/originals/d4/77/93/d47793908cd16de59fc85da20130632f.jpg" alt="search-img">
-            <div class="content">
-                <h1>CloudOn</h1>
-                <p>Search and download any images</p>
-                <div class="search-box">
-                    <i class="uil uil-search"></i>
-                    <input type="text" placeholder="Search Images">
-                </div>
+            <div class="dropdown">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="login_page.html">SignIn</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="image.html" class="action_btn">Get started</a></li>
             </div>
-        </section>
-        <section class="gallery">
-            <ul class="images"><!--have to change--></ul>
-            <button class="load-more">Load More</button>
-            <a href="https://www.pexels.com/search/color%3A%20red/" class=""></a>
-        </section>
+        </header>
+        <script>
+            const toogleBtn = document.querySelector('.toogle_btn')
+            const toogleBtnIcon = document.querySelector('.toogle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown')
+
+            toogleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open') 
+            }
+        </script>
+        <a href="image.html"></a>
     </body>
 </html>
